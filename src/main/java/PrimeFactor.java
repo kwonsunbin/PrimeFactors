@@ -4,14 +4,14 @@ import java.util.List;
 public class PrimeFactor {
 
     public static List<Integer> generate(int n) {
-        List<Integer> factors = new ArrayList<>();
+        List<Integer> primeFactors = new ArrayList<>();
         while (n % 2 == 0) {
-            factors.add(2);
+            primeFactors.add(2);
             n /= 2;
         }
         if (n > 1) {
-            factors.add(n);
+            primeFactors.add(n);
         }
-        return factors;
+        return primeFactors;
     }
 }

@@ -30,4 +30,9 @@ public class PrimeFactorsTest {
     public void testNine() {
         assertEquals(List.of(3, 3), PrimeFactor.generate(9));
     }
+
+    @Test
+    public void testTwelve() {
+        assertEquals(List.of(2, 2, 3), PrimeFactor.generate(12));
+    }
 }

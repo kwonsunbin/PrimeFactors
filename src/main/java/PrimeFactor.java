@@ -2,7 +2,7 @@ import java.util.List;
 
 public class PrimeFactor {
 
-    public static List<Integer> generate(int n) {
-        return List.of(n);
+    public static List<Integer> generate(int number) {
+        return List.of(number);
     }
 }

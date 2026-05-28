@@ -5,12 +5,11 @@ public class PrimeFactor {
 
     public static List<Integer> generate(int n) {
         List<Integer> primeFactors = new ArrayList<>();
-        while (n % 2 == 0) {
-            primeFactors.add(2);
-            n /= 2;
-        }
-        if (n > 1) {
-            primeFactors.add(n);
+        for (int divisor = 2; n > 1; divisor++) {
+            while (n % divisor == 0) {
+                primeFactors.add(divisor);
+                n /= divisor;
+            }
         }
         return primeFactors;
     }

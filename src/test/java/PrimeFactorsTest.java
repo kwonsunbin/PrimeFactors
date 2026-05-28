@@ -25,4 +25,9 @@ public class PrimeFactorsTest {
     public void testSix() {
         assertEquals(List.of(2, 3), PrimeFactor.generate(6));
     }
+
+    @Test
+    public void testNine() {
+        assertEquals(List.of(3, 3), PrimeFactor.generate(9));
+    }
 }

@@ -10,4 +10,9 @@ public class PrimeFactorsTest {
     public void testTwo() {
         assertEquals(List.of(2), PrimeFactor.generate(2));
     }
+
+    @Test
+    public void testThree() {
+        assertEquals(List.of(3), PrimeFactor.generate(3));
+    }
 }

@@ -4,7 +4,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PrimeFactorsTest {
+public class PrimeFactorTest {
 
     @Test
     public void testTwo() {
